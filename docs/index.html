@@ -48,10 +48,11 @@ function getdata(){
 try{
 //document.getElementById("m2").classList.remove("c2");
 if (!isAdded) {
+alert("t");
 isAdded = true;
 m2.classList.add("c2");
 }
-document.getElementById("m2").innerHTML = r[i];
+m2.innerHTML = r[i];
 } catch(e){
 } finally {
 if (i++>j) i = 0;
@@ -66,5 +67,5 @@ setTimeout("getdata()",2000);
   //alert("1");
 createHtml();
 --></script>
-  らあはまな6
+  らあはまな7
 </body></html>
