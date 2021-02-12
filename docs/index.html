@@ -32,18 +32,18 @@ var j = r.length-1;
 
 function createHtml(){
 var c="";
-c += "<div id=\m1\"><div id=\"m2\"></div><div id=\"m3\">@</div></div>";//class=\"c2\"
+c += "<div id=\m1\"><div id=\"m2\">あ</div><div id=\"m3\">@</div></div>";//class=\"c2\"
 document.getElementById("m0").innerHTML = c;
 //alert("j0");
 getdata();
 }
 function getdata(){
 try{
-document.getElementById("m1").classList.remove("c2");
+document.getElementById("m2").classList.remove("c2");
 
-document.getElementById("m2").innerHTML = r[i];
+//document.getElementById("m2").innerHTML = r[i];
   
-document.getElementById("m1").classList.add("c2");
+document.getElementById("m2").classList.add("c2");
 } catch(e){
 } finally {
 if (i++>j) i = 0;
@@ -55,8 +55,8 @@ setTimeout("getdata()",2000);
 <body oncontextmenu="return false;" onselectstart="return false;">
 <div id="m0"></div>
 <script type="text/javascript"><!--
-  alert("1");
+  //alert("1");
 createHtml();
 --></script>
-  らあはまな
+  らあはまな3
 </body></html>
