@@ -29,7 +29,6 @@ r = "観自在菩薩行深般若波羅蜜多時照見五蘊皆空度一切苦厄
 //r=s.split("");
 var i = 0;
 var j = r.length-1;
-var isAdded = false;
 var m2 = nothing;
 
 function createHtml(){
@@ -38,24 +37,15 @@ c += "<div id=\m1\"><div id=\"m2\" class=\"c2\">あ</div><div id=\"m3\">@</div><
 document.getElementById("m0").innerHTML = c;
 //alert("j0");
 m2 = document.getElementById("m2");
-m2.addEventListener("transitionend", function(){
-  alert("w");
-if(isAdded){
-isAdded = false;
-m2.classList.remove("c2");
-}
-});
 getdata();
 }
 
 function getdata(){
 try{
 //document.getElementById("m2").classList.remove("c2");
-if (!isAdded) {
-alert("t");
-isAdded = true;
+m2.classList.remove("c2");
+m2.offsetWidth = m2.offsetWidth;
 m2.classList.add("c2");
-}
 m2.innerHTML = r[i];
 } catch(e){
 } finally {
@@ -71,5 +61,5 @@ setTimeout("getdata()",2000);
   //alert("1");
 createHtml();
 --></script>
-  らあはまな4
+  らあはまな5
 </body></html>
