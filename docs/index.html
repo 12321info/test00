@@ -38,7 +38,7 @@ c += "<div id=\m1\"><div id=\"m2\" class=\"c2\">あ</div><div id=\"m3\">@</div><
 document.getElementById("m0").innerHTML = c;
 //alert("j0");
 m2 = document.getElementById("m2");
-m2.addEventListener("animationiteration", function(){
+m2.addEventListener("transitionend", function(){
   alert("w");
 if(isAdded){
 isAdded = false;
@@ -71,5 +71,5 @@ setTimeout("getdata()",2000);
   //alert("1");
 createHtml();
 --></script>
-  らあはまな3
+  らあはまな4
 </body></html>
