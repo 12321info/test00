@@ -22,7 +22,7 @@ var i = 0;
 function createHtml(){
 var c="";
 c += "<div id=\m1\"><div id=\"m2\" style=\"type0\"></div><div id=\"m3\">@</div></div>";
-document.detElementById("m0").inner HTML = c;
+document.detElementById("m0").innerHTML = c;
 getdata();
 }
 function getdata(){
@@ -30,7 +30,7 @@ function getdata(){
 var c="";
 var r = [];
 try{
-document.detElementById("m2").inner HTML = r[i];
+document.detElementById("m2").innerHTML = r[i];
 } catch(e){
 ｝finally {
 if (i++>3) i = 0;
